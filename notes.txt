@@ -1,0 +1,32 @@
+--------------------- LOG ---------------------
+February 25th 2023 - Project Started
+February 26th 2023 - Worked on UI 
+    - did the circles
+February 27th 2023 - coded all of the main game components
+    - checked the user input when 'check' button is pressed
+    - gave the correctness of the user input
+    - showed solution if user inputs correct solution
+
+
+
+--------------------- TO DO ---------------------
+- make the info tab
+- make the game work DONE
+- store game results somehow -> SQL or firebase which i can also use for login
+- make everything responsive 
+- display that box thing when the user wins the game which shows their stats
+    - how many tries it took them
+    - former data, like average of tries
+- prevent user from playing again once theyve already played the one for today
+- randomize the solution
+- change cursor colour when piece is clicked 
+- allow ability to play previous games 
+
+
+--------------------- GAME COMPONENTS ---------------------
+- when you click on a piece, you click on the circle to fill it DONE
+- you can change the colours as many times as you want until you press check DONE
+- when check has been clicked:
+    - lock in the colours and change the active column DONE
+    - update the results in the square underneath DONE
+
