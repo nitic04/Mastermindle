@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermindle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-bar">
+        <h1>MASTERMINDLE</h1>
+    </div>
+    <button class="btn">i</button>
+</body>
+<div class="game-board">
+    <ul>
+        <li>
+            <div class="boxes" id="col1">
+                <div class="circle choice" id="c1" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c2" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c3" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c4" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col2">
+                <div class="circle choice" id="c5" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c6" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c7" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c8" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col3">
+                <div class="circle choice" id="c9" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c10" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c11" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c12" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col4">
+                <div class="circle choice" id="c13" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c14" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c15" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c16" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col5">
+                <div class="circle choice" id="c17" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c18" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c19" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c20" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col6">
+                <div class="circle choice" id="c21" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c22" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c23" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c24" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col7">
+                <div class="circle choice" id="c25" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c26" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c27" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c28" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col8">
+                <div class="circle choice" id="c29" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c30" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c31" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c32" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col9">
+                <div class="circle choice" id="c33" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c34" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c35" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c36" onclick="changeColor(this.id)"></div> 
+            </div>
+            <div class="boxes" id="col10">
+                <div class="circle choice" id="c37" onclick="changeColor(this.id)"></div>
+                <div class="circle choice" id="c38" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c39" onclick="changeColor(this.id)"></div> 
+                <div class="circle choice" id="c40" onclick="changeColor(this.id)"></div> 
+            </div>
+            
+        </li>
+        <li>
+            <div class="boxes result" id="box1">
+                <div class="circle one" id='box1c1'></div>
+                <div class="circle two" id='box1c2'></div>
+                <div class="circle three" id='box1c3'></div>
+                <div class="circle four" id='box1c4'></div>
+            </div>
+            <div class="boxes result" id="box2">
+                <div class="circle one" id='box2c1'></div>
+                <div class="circle two" id='box2c2'></div>
+                <div class="circle three" id='box2c3'></div>
+                <div class="circle four" id='box2c4'></div>
+            </div>
+            <div class="boxes result" id="box3">
+                <div class="circle one" id='box3c1'></div>
+                <div class="circle two" id='box3c2'></div>
+                <div class="circle three" id='box3c3'></div>
+                <div class="circle four" id='box3c4'></div>
+            </div>
+            <div class="boxes result" id="box4">
+                <div class="circle one" id='box4c1'></div>
+                <div class="circle two" id='box4c2'></div>
+                <div class="circle three" id='box4c3'></div>
+                <div class="circle four" id='box4c4'></div>
+            </div>
+            <div class="boxes result" id="box5">
+                <div class="circle one" id='box5c1'></div>
+                <div class="circle two" id='box5c2'></div>
+                <div class="circle three" id='box5c3'></div>
+                <div class="circle four" id='box5c4'></div>
+            </div>
+            <div class="boxes result" id="box6">
+                <div class="circle one" id='box6c1'></div>
+                <div class="circle two" id='box6c2'></div>
+                <div class="circle three" id='box6c3'></div>
+                <div class="circle four" id='box6c4'></div>
+            </div>
+            <div class="boxes result" id="box7">
+                <div class="circle one" id='box7c1'></div>
+                <div class="circle two" id='box7c2'></div>
+                <div class="circle three" id='box7c3'></div>
+                <div class="circle four" id='box7c4'></div>
+            </div>
+            <div class="boxes result" id="box8">
+                <div class="circle one" id='box8c1'></div>
+                <div class="circle two" id='box8c2'></div>
+                <div class="circle three" id='box8c3'></div>
+                <div class="circle four" id='box8c4'></div>
+            </div>
+            <div class="boxes result" id="box9">
+                <div class="circle one" id='box9c1'></div>
+                <div class="circle two" id='box9c2'></div>
+                <div class="circle three" id='box9c3'></div>
+                <div class="circle four" id='box9c4'></div>
+            </div>
+            <div class="boxes result" id="box10">
+                <div class="circle one" id='box10c1'></div>
+                <div class="circle two" id='box10c2'></div>
+                <div class="circle three" id='box10c3'></div>
+                <div class="circle four" id='box10c4'></div>
+            </div>
+        </li>
+        <div class="boxes solution">
+            <div class="circle answers" id="ansc1"></div>
+            <div class="circle answers" id="ansc2"></div>
+            <div class="circle answers" id="ansc3"></div>
+            <div class="circle answers" id="ansc4"></div>
+        </div>
+    </ul>
+</div>
+<div class="piece-box">
+    <ul>
+        <li>
+        <button class="pieces p1" id="p1" onclick="getColour(this.id)"></button>
+        <button class="pieces p2" id="p2" onclick="getColour(this.id)"></button>
+        <button class="pieces p3" id="p3" onclick="getColour(this.id)"></button>
+        <button class="pieces p4" id="p4" onclick="getColour(this.id)"></button>
+        <button class="pieces p5" id="p5" onclick="getColour(this.id)"></button>
+        <button class="pieces p6" id="p6" onclick="getColour(this.id)"></button>
+        <button class="btn check" onclick="checkAnswer()">CHECK</button>
+        </li>
+    </ul>
+</div>
+<script src="main.js"></script>
+</html>

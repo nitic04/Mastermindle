@@ -1,0 +1,170 @@
+body{
+    background-color: lightgrey;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* ----------------- HEADER ----------------- */
+
+.header-bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 20px;
+    left: 5px;
+}
+
+.btn{
+    font-size: 25px;
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* ----------------- GAME BOARD ----------------- */
+
+.game-board{
+    background-color: #C4A484;
+    padding: 20px;
+    top: 20%;
+    width: 1100px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    align-items: center;
+    display: inline-block;
+}
+
+.boxes{
+    background-color: purple;
+    height: 290px;
+    width: 80px;
+    margin-left: -30px;
+    margin-right: 41px;
+    margin-top: -10px;
+    border-radius: 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.circle{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+	width: 25px; 
+    height: 25px;
+    margin: 10px;
+	background: rgb(221, 221, 221);
+	border-radius: 50px;
+}
+
+.solution{
+    background-color: purple;
+    width: 130px;
+    height: 385px;
+    margin-left: 925px;
+    position: relative;
+    margin-top: -500px;
+    margin-bottom: 18px;
+}
+
+.answers{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin-left: 25px;
+    margin-top: 13px;
+}
+
+.choice{
+    display: grid;
+	width: 60px; 
+    height: 60px;
+    margin: 10px;
+	appearance: none; -webkit-appearance: none; 
+	background: #ddd;
+	border-radius: 50px;
+}
+
+.result{
+    margin-top: 10px;
+    height: 80px;
+}
+
+.two{
+    margin-left: 45px;
+    margin-top: -35px;
+}
+
+.four{
+    margin-left: 45px;
+    margin-top: -35px;
+}
+
+/* ----------------- PIECE BOX ----------------- */
+
+.piece-box{
+    background-color: lightslategray;
+    padding: 20px;
+    top: 80%;
+    width: 600px;
+    height: 50px;
+    max-width: 100%;
+    border-radius: 10px;
+    position: fixed;
+}
+
+ul{
+    list-style: none;
+    white-space: nowrap;
+}
+
+.pieces{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: -8px;
+    margin-right: 50px;
+    margin-left: -20px;
+}
+
+.p1{
+    background-color: rgb(0, 0, 255);
+}
+
+.p2{
+    background-color: rgb(255, 0, 0);
+}
+
+.p3{
+    background-color: rgb(255, 255, 0);
+}
+
+.p4{
+    background-color: rgb(0, 128, 0);
+}
+
+.p5{
+    background-color: rgb(0, 0, 0);
+}
+
+.p6{
+    background-color: rgb(255, 255, 255);
+}
+
+.check{
+    width: 100px;
+    height: 40px;
+    margin-top: -15px;
+    font-size: 23px;
+}
