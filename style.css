@@ -63,12 +63,12 @@ body{
 	width: 25px; 
     height: 25px;
     margin: 10px;
-	background: #ddd;
+	background: rgb(221, 221, 221);
 	border-radius: 50px;
 }
 
 .solution{
-    background-color: black;
+    background-color: purple;
     width: 130px;
     height: 385px;
     margin-left: 925px;
@@ -139,27 +139,27 @@ ul{
 }
 
 .p1{
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
 }
 
 .p2{
-    background-color: red;
+    background-color: rgb(255, 0, 0);
 }
 
 .p3{
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
 }
 
 .p4{
-    background-color: green;
+    background-color: rgb(0, 128, 0);
 }
 
 .p5{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .p6{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .check{
