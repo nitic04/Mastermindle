@@ -100,14 +100,24 @@ body{
     height: 80px;
 }
 
+.one{
+    background-color: #696969;
+}
+
 .two{
     margin-left: 45px;
     margin-top: -35px;
+    background-color: #696969;
+}
+
+.three{
+    background-color: #696969;
 }
 
 .four{
     margin-left: 45px;
     margin-top: -35px;
+    
 }
 
 /* ----------------- PIECE BOX ----------------- */
