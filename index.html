@@ -11,7 +11,19 @@
     <div class="header-bar">
         <h1>MASTERMINDLE</h1>
     </div>
-    <button class="btn">i</button>
+    <button class="btn info" onclick="openInfo()">i</button>
+    <div class="modal" id="info-modal">
+        <div class="info-content">
+            <span class="close" onclick="closeInfo()">X</span>
+            <h2>HOW TO PLAY</h2>
+            <p>Guess the colour combination in 10 tries.</p>
+            <p>Each guess can be any of the 6 given colour options, the combination CANNOT have duplicates.</p>
+            <p>Press check to check your answer. When this is done, the circles in the square below your guess will change colours based on the correctness of your answer.</p>
+            <p>If a circle is red, it means one of your choices is the correct colour in the correct position.</p>
+            <p>If a circle is white, it means that one of your choices is just the correct colour but is not in the correct position.</p>
+            <p>If a circle does not change colour, it means the colour is incorrect.</p>
+        </div>
+    </div>
 </body>
 <div class="game-board">
     <ul>
@@ -161,5 +173,6 @@
         </li>
     </ul>
 </div>
+<div class="modal-backdrop" id="backdrop"></div>
 <script src="main.js"></script>
 </html>
