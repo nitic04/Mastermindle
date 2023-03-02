@@ -1,5 +1,5 @@
 body{
-    background-color: lightgrey;
+    background-color: #FFFFFF;
     color: black;
     display: flex;
     font-family: sans-serif;
@@ -28,6 +28,11 @@ body{
     width: 50px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.info:hover{
+    font-size: 30px;
 }
 
 /* ----------------- GAME BOARD ----------------- */
@@ -68,7 +73,7 @@ body{
 }
 
 .solution{
-    background-color: purple;
+    background-color: rgb(128, 0, 128);
     width: 130px;
     height: 385px;
     margin-left: 925px;
@@ -130,7 +135,7 @@ body{
     height: 50px;
     max-width: 100%;
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
 }
 
 ul{
@@ -150,26 +155,32 @@ ul{
 
 .p1{
     background-color: rgb(0, 0, 255);
-} 
+    cursor: pointer;
+}
 
 .p2{
     background-color: rgb(255, 0, 0);
+    cursor: pointer;
 }
 
 .p3{
     background-color: rgb(255, 255, 0);
+    cursor: pointer;
 }
 
 .p4{
     background-color: rgb(0, 128, 0);
+    cursor: pointer;
 }
 
 .p5{
     background-color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .p6{
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .check{
@@ -177,4 +188,50 @@ ul{
     height: 40px;
     margin-top: -15px;
     font-size: 23px;
+    cursor: pointer;
+}
+
+.check:hover{
+    font-size: 25px;
+}
+
+/* ----------------- INFO MODAL BOX ----------------- */
+.modal-backdrop{
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(204, 206, 209, 0.5);
+}
+
+.modal{
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    width: 40%;
+    height: 72%;
+    overflow: auto;
+    background-color: white;
+}
+
+.info-content{
+    color: black;
+    margin: auto;
+    padding: 30px;
+    width: 80%;
+    font-size: 18px;
+}
+
+.close{
+    float: right;
+}
+
+.close:hover{
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
 }
