@@ -14,22 +14,23 @@ function closeInfo(){
 
 function generate_solution(){
     solution = []
-    const colours = ['rgb(0, 128, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)', 'rgb(255, 255, 0)'];
-    const nums = [0, 1, 2, 3, 4, 5]
+    const colours = ['rgb(0, 128, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)', 'rgb(255, 255, 0)', 'rgb(255, 165, 0)', 'rgb(128, 0, 128)'];
+    const nums = [0, 1, 2, 3, 4, 5, 6, 7]
     for (let i = 0; i < 4; i++){
         result = nums[Math.floor(Math.random()*nums.length)];
+        console.log(result);
         nums.splice(nums.indexOf(result), 1);
-        solution.push(colours[i])
+        console.log(nums);
+        solution.push(colours[result])
     }
 }
 
 window.onload = function() {
     generate_solution();
     console.log(solution);
-    document.getElementById('col1').style.backgroundColor = 'rgb(255, 165, 0)';
+    document.getElementById('col1').style.backgroundColor = 'rgb(105, 105, 105)';
   }
 
-// var solution = ['rgb(0, 128, 0)', 'rgb(0, 0, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)'];
 var current_column = 1;
 var column = '';
 
@@ -100,8 +101,6 @@ function checkAnswer(){
         num += 1;
     }
 
-    // change colour of result circles
-    // get id of all four circles, then based on number of red and white, change colour of circles
     box1 = 'box'+String(current_column)+'c1';
     box2 = 'box'+String(current_column)+'c2';
     box3 = 'box'+String(current_column)+'c3';
@@ -133,8 +132,7 @@ function checkAnswer(){
         alert('YOU LOST. BETTER LUCK NEXT TIME!');
     }
 
-    // keep track of current column
     current_column += 1;
     document.getElementById('col'+(current_column-1)).style.backgroundColor = 'rgb(128, 0, 128)';
-    document.getElementById('col'+current_column).style.backgroundColor = 'rgb(255, 165, 0)';
+    document.getElementById('col'+current_column).style.backgroundColor = 'rgb(105, 105, 105)';
 }
