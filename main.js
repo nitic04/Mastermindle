@@ -14,7 +14,7 @@ function closeInfo(){
 
 function generate_solution(){
     solution = []
-    const colours = ['rgb(0, 128, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)', 'rgb(255, 255, 0)', 'rgb(255, 165, 0)', 'rgb(128, 0, 128)'];
+    const colours = ['rgb(0, 128, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)', 'rgb(255, 255, 0)', 'rgb(255, 165, 0)', 'rgb(0, 128, 128)'];
     const nums = [0, 1, 2, 3, 4, 5, 6, 7]
     for (let i = 0; i < 4; i++){
         result = nums[Math.floor(Math.random()*nums.length)];
