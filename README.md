@@ -9,7 +9,7 @@ Play Here: https://mastermindlegame.netlify.app/
 * [Updates](#updates)
 
 ## About
-Mastermindle is a browser puzzle game where the objective is to guess the randomly generated colour combination in the fewest number of tries using the given colour options. Every turn, the inputted guess is checked and a box below the guess shows the correctness of the guess. Every red dot represents that one of the colours is the correct colour and in the right position. Every white dot means that one of the colours is correct but is not in the right position. There are no colour duplicates in the solution. 
+Mastermindle is a browser puzzle game where the objective is to guess the randomly generated colour combination in the fewest number of tries using the given colour options. Every turn, the inputted guess is checked and a box below the guess shows the correctness of the input. A red dot means that one of the choices is the correct colour and in the right position. Every white dot means that one of the choices is correct but is not in the right position. There are no colour duplicates in the solution. 
 
 ## Languages Used
 - HTML
