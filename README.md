@@ -42,4 +42,5 @@ Mastermindle is a browser puzzle game where the objective is to guess the random
     - added two more coloured pieces for increased difficulty 
 - March 7th 2023 - Exception handling
     - prohibited empty and duplicate colour inputs 
+- March 16th 2023 - Added Google Analytics
 - April 1st 2023 - Added ability to use number pad to select colours
