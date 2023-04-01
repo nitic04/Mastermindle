@@ -185,7 +185,7 @@ function checkAnswer(){
             document.getElementById('ansc2').style.backgroundColor = solution[1];
             document.getElementById('ansc3').style.backgroundColor = solution[2];
             document.getElementById('ansc4').style.backgroundColor = solution[3];
-            gameWon()
+            alert('CONGRATULATIONS! YOU HAVE WON THE GAME!')
         } else if (current_column == 10){
             document.getElementById('ansc1').style.backgroundColor = solution[0];
             document.getElementById('ansc2').style.backgroundColor = solution[1];
